@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Tipos de dados</title>
+    </head>
+<body>
+    <h1>Tipos de Dados em js</h1>
+    <script>
+        // tipos de dados no javascript
+        /* Number
+        * string
+        * boolean
+        * array
+        * Null e Undefined
+        * symbol
+        * object
+        * function
+        */
+        
+        /* Number -> Sâo todos os números reais que aprendemos nas  aulas
+         de matemática.
+        */
+        
+        /* Strings -> São valores de texto, normalmente 
+        * chamados de "cadeia de caracteres";
+        * podemos usar '' e "" para encapsular a string
+        * para usar caracteres especias utilizamos a barra envestida
+        * let caracterespecial = "lorem \n Ipsum \\ dolor\'\"amet";
+        * template de string: o template de strings é uma nova forma
+        * de concatenação e utiliza o ${'qualquercoisa'} e a crase ao     * redor da string. 
+        */
+        
+        /* Boolean -> representa dois tipos de dados que são
+        * ture -> verdadeiro.
+        * false -> falso.
+        */
+        
+        /* Array -> (vetor): é uma lista ou coleção de dados
+        * que pode ser acessada por índice.
+        * para cirar um vetor vazio basta criar uma variavel e atribuir * [] a ela let verctor = [];.
+        *
+        * atribuindo valores: Você pode criar um vetor com seus valores * separados por vírgula.
+        * let vector = [1, 22, 0, 100];
+        *
+        * podemos adicionar valores de qualquer tipo no vetor
+        * let vector = [1, 'ola mundo', true,[1,2,3]];
+        * 
+        acessando valores: os valores podem ser acessados atráves de * seu índice.
+        * let vector = [1,2,3,4];
+        * console.log(vector[1]); -> irá me retornar o valor 2, pois o
+        * arry começa do zero (0,1,2,3...).
+        *
+        * alterando e atribuindo valores pelo índice: com o índice, * * * você pode: a) alterar um valor existente
+        * b) Inserir um novo valor em uma posição específica.
+        * let vector = [11,33,44,55,67]
+        * alterar o primeiro valor: console.log(vector[0] = 1000);
+        * insere um valor na após o ultimo elemento
+        * console.log(vector[6] = 9);
+        */
+        
+        
+        /* Null e Undefined
+        * Null -> O null é um tipo de dado especial, ele representa a 
+        * falta de um valor de qualquer outro tipo de dado
+        *  ex let x = null; let y = 1; y = null;
+        *
+        * Undefined -> Este tipo de dado aparece quando criamos uma
+        * variavel e tentamos acessar seu valor antes de ter atribuido
+        * alo a ela
+        * let x;
+        * console.log(x); undefind é diferente de null
+        * 
+        */
+        
+        /* Objeto -> = é um tipo de dado composto pelos outros tipos.
+        * Com ele, podemos organizar informações relaionadas em  variavel. nesse exemplo colocamos um objeto com propriedades
+        *let carro = {
+            roda: 4,
+            portas: 2,
+            nome: "um carro",
+            avenda: true
+        };
+        *
+        * Criação: Um objeto vazio é bem simples de criar
+        * ex let carro = {};
+        * Caso você já tenha criado o objeto e queira adicionar um     * novo, você pode fazer de duas formas:
+        * codigo -> carr.portas =2;
+        * codigo -> carro["portas"] =2;
+        */
+        
+        /* function(funções) -> As funçoes são utilizadas para          * criarmos uma sequencia de codigo ou operações para serem
+        * executadas.
+        * codigo 1 e uma opção ->
+        let olaMundo = function() {
+            console.log("ola mundo");
+        }
+        * chamando a funcao para executar-> olaMundo();
+        * note que para fazer a função executar, você precisa chama-la
+        * com os parênteses.
+        *
+        * codigo 2 e opção mais usada ->
+        * function olaMundo(){
+            console.log("ola Mundo!");
+        }
+        * chamando a funcao para executar: olaMundo(); como a primeira * acima
+        *
+        * podemos também passar funções com parametros, que é quando
+        * ela recebe argumentos dentro dos parenteses ()
+        * let somar = function(valor1, valor2){
+            let resultado = valor1 + valor2
+            console.log(resultado);
+        }
+        * chamando a função para executar somar(1,2), lembrando que o
+        * valor1 recebe 1 e valor2 recebe 2.
+        * podemos chamar essa função e passar valores mais de uma vez
+        * somar(1,2);
+        * somar(3,5);
+        * somar (10,10);
+        *
+        * Outro recurso usado na função é o return
+        * let somar = function(valor1, valor2){
+            let resultado = valor1 * valor2;
+            return resultado;
+        }
+        * aprimeira coisa que você precisa saber. O return para a
+        * função devolve um valor.
+        * let somar = function(valor1, valor2){
+            lconsole.log(valor1 * valor2);
+            return resultado;
+        *
+        * Uma função com return devolve um valor que podemos guardar   * em uma variável.
+        *let somar = function(valor1, valor2){
+            lconsole.log(valor1 * valor2);
+            return resultado;
+        }
+        * let resultado = somar(10,20);
+        */
+    </script>
+</body>    
+</html>
