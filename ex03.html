@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Ex condicionais</title>
+    </head>
+    <body>
+        <h1>Ex de condicionais</h1>
+        <script>
+            let simbolo1 = "R$";
+            let simbolo2 = "U$";
+            let simbolo3 = "E";
+            
+            function moeda (simbolo) {
+                switch (simbolo) {
+                    case "R$":
+                        console.log("Real");
+                        break;
+                    case "U$":
+                        console.log("Dolar");
+                        break;
+                    case "E":
+                        console.log("Euro");
+                        break;
+                    default:
+                        console.log("Não valida");
+                        break;
+                }
+            }
+            
+            function moeda2 (simbolo) {
+                if (simbolo1 == "R$") {
+                    console.log("Rela");
+                }
+                else if (simbolo2 == "U$") {
+                    console.log("Dolar");
+                }
+                else if (simbolo3 == "E") {
+                    console.log("Euro");
+                }
+                else {
+                    console.log("que porra");
+                }
+            }
+        </script>    
+    </body>
+</html>
