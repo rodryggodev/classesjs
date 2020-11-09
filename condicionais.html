@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-br">
+   <head>
+     <meta charset="utf-8">
+     <title>Condicionais</title>
+    </head>
+ <body>
+        <h1 style="color: blueviolet">CONDICIONAIS JS</h1>    
+     <script>
+         /* CONDICIONAIS
+          
+          if -> O if (se) é um comando que permite executar um código apenas se uma condição entre parênteses for verdadeira(true).
+          
+          else -> O else (se não)  serve para executarmos um trecho de código quando o if for falso.
+          
+          else if -> Em casos como o anterios, é interessante usar o comando else if(senão se).
+          -----------------------------------
+          
+          escopo -> O bloco de escopo é definido pela região ao qual variaveis e outros dados sao visiveis.
+           let numero = 1;
+           if (numero == 1) {
+                let texto = "holla";
+                // acessando a variavel número
+                numero = 2;
+           }
+           
+           // erro de escopo
+           console.log(texto)
+          ------------------------------------
+          
+          escopo global -> Uma variavel declarada fora de uma função, torna-se global e todos os scripts e funções em uma página da web podem acessá-la.
+          <script>
+            let valor = 12;
+            
+            let umaFuncao = function() {
+                console.log(valor);
+            }
+            
+            if (valor == 12) {
+                umaFuncao();
+                console.log(valor);
+            }
+            ----------------------------------
+            
+            escopo de bloco -> Variáveis declaradas dentro de um local cercado por {}
+             
+             let varGlobal = 1;
+             function funcaoGlobal() {
+                let varFuncao = varGlobal +1;
+                
+                function funcaoLocal() {
+                    let varFuncLocal = varFuncao + varGlobal;
+                    console.log(varFuncLocal);
+                }
+             }
+             ---------------------------------
+             
+             var -> O var só possuí escopo global e de bloco para funções.
+             
+             let x = 1;
+             
+             if (x == 1) {
+                var y = 99;
+             }
+             console.logy
+             ---------------------------------
+             
+             
+         */
+     </script>   
+ </body>    
+</html>
